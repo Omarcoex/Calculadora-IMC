@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Calculdora de IMC</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="contenedor container-fluid mt-5 border border-info col-6">
+        <form action="" class="container" id="formulario">
+            <div class="col-3 mb-3 mx-auto ">
+              <fieldset class="form-group">
+                <legend>Calculadora del IMC</legend>
+      
+                <label for="peso">Peso</label>
+                <input type="text" name="kilos" class="form-control" />
+      
+                <label for="alto">Altura</label>
+                <input type="tex" name="altura" class="form-control" />
+      
+                <label for="imc">IMC:</label>
+                <input
+                  type="text"
+                  name="imc"
+                  class="form-control"
+                  disabled="disabled"
+                />
+              </fieldset>
+              <button type="button" class="btn btn-warning mt-3 mx-auto">Calcular</button>
+            </div>
+            
+          </form>
+          
+    </div>
+
     
-</body>
+    <!-- Javascrip -->
+    <script src="./calculadora.js"></script>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
