@@ -30,6 +30,16 @@ function calcularIMC() {
   }
 }
 
+function cancelar() {
+  document.getElementById("peso").value = "";
+  document.getElementById("altura").value = "";
+  document.getElementById("valor").innerText = "";
+  document.getElementById("valor").style.backgroundColor = "#fff";
+}
+
 const calcularI = document.getElementById("calcular");
 calcularI.addEventListener("click", calcularIMC);
-console.log(valor)
+console.log(valor);
+
+const reini = document.getElementById("Cancelar");
+reini.addEventListener("click", cancelar);
